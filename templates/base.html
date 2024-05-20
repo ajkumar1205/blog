@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    {% endblock  %}
+    <link rel="stylesheet" href="{% static 'output.css' %}">
+    <script src="https://unpkg.com/htmx.org@1.9.12"
+        integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="font-sans">
+        <div class="dark:bg-dark-bg dark:text-white h-14 flex justify-between items-center border-b-2 border-b-dark-bg dark:border-b-black">
+
+            <div class="w-11 h-11 bg-white rounded-full"></div>
+
+            <input class="bg-white w-1/3 h-11 rounded-full focus:border-dark-bg  border-2 focus:outline-dark-bg dark:focus:border-black dark:focus:outline-black px-4"
+                placeholder="Search for something..." type="text">
+
+            <div class="w-11 h-11 bg-white rounded-full"></div>
+
+        </div>
+    {% block body %}
+
+
+    {% endblock %}
+</body>
+
+</html>
