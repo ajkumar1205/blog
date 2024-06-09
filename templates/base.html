@@ -1,7 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,12 +15,12 @@
 <body class="font-sans">
         <div class="dark:bg-dark-bg dark:text-white h-14 flex justify-between items-center border-b-2 border-b-dark-bg dark:border-b-black">
 
-            <div class="w-11 h-11 bg-white rounded-full"></div>
+            <div class="w-11 h-11 bg-white rounded-full border-2 border-dark-bg dark:border-black"></div>
 
-            <input class="bg-white w-1/3 h-11 rounded-full focus:border-dark-bg  border-2 focus:outline-dark-bg dark:focus:border-black dark:focus:outline-black px-4"
+            <input class="w-1/3 h-11 rounded-full outline-2 outline-dark-bg border-2 border-dark-bg px-4"
                 placeholder="Search for something..." type="text">
 
-            <div class="w-11 h-11 bg-white rounded-full"></div>
+            <div class="w-11 h-11 bg-white rounded-full border-2 border-dark-bg dark:border-black"></div>
 
         </div>
     {% block body %}
@@ -29,5 +28,4 @@
 
     {% endblock %}
 </body>
-
 </html>

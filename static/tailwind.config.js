@@ -13,7 +13,7 @@ module.exports = {
     colors: {
       'white': '#ffffff',
       'black': '#000000',
-      'dark-bg': '#999999',
+      'dark-bg': '#AAAAAA',
       'primary': "#38bdf8",
     },
     fontFamily: {

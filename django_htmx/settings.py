@@ -51,6 +51,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+if DEBUG:
+    MIDDLEWARE += ['django_htmx.nocache.NoCache']
+
 ROOT_URLCONF = 'django_htmx.urls'
 
 TEMPLATES = [

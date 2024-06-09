@@ -7,6 +7,7 @@ import sys
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_htmx.settings')
+    
     os.system("bunx tailwindcss -i ./static/input.css -o ./static/output.css -c ./static/tailwind.config.js")
     try:
         from django.core.management import execute_from_command_line

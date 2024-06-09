@@ -10,10 +10,3 @@ def response(request):
         <h1 class="text-2xl text-white">Response</h1>
     """
     return HttpResponse(html)
-
-def blog(request):
-    response = HttpResponse(render(request, "blog.html"))
-    response['HX-Push-Url'] = "blog/"
-
-    print(response)
-    return response
